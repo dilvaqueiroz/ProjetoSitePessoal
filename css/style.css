@@ -1,0 +1,151 @@
+*{
+	margin: 0;
+	padding: 0;;
+}
+ 
+.site-container{
+	width: 1115px;
+	margin: 0 auto;
+}
+
+@media(max-width: 1250px){
+	.site-container{
+		width: 90%;
+	}
+}
+.navigation{
+	position: absolute;
+	top: 4.6%;
+	width: 100%;
+	z-index: 2;
+}
+.navigation-inner{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.main-navigation{
+	color: #fff;;
+	display: none;
+	position: fixed;
+	height: 100%;
+	width: 100%;
+	top: 0px;
+	left: 0px;
+	background:#000;
+	opacity: 0.9;
+}
+.main-navigation .main-navigation-ul{
+	position:absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	padding: 3%;
+	border: 2px solid #fff;
+	border-radius: 7px;
+	background-color: #c18f59;
+}
+
+.main-navigation .main-navigation-ul li{
+	margin-bottom: 20px;;
+	list-style: none;
+}
+.main-navigation .main-navigation-ul a{
+	color: #fff;
+	font-size: 20px;
+	font-weight: 600;
+	text-decoration: none;
+	text-transform: uppercase;
+	transition: 0.3s ease;
+}
+
+.main-navigation .main-navigation-ul a:hover{
+	color: #777;
+}
+
+.burger-container{
+	cursor: pointer;
+	z-index: 3;
+}
+
+.bar1, .bar2, .bar3{
+	width: 30px;
+	height: 3px;
+	background-color: #c18f59;
+	margin: 6px 0;
+	transition: 0.4s;
+}
+
+.change .bar1{
+	transform:rotate(-45deg) translate(-6px, 6px);
+	background-color: #c18f59;
+}
+
+.change .bar2{
+	opacity: 0;
+	background-color: #c18f59;
+}
+
+.change .bar3{
+	transform:rotate(45deg) translate(-6px,-7px);
+	background-color: #c18f59;
+}
+
+.section-top-banner{
+	position: relative;
+	display: flex;
+	align-items: flex-end;
+	background-image: url("../images/top-banner-bckg.jpg");
+	background-position: center;
+	background-size: cover;
+}
+
+.section-top-banner:after{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #000;
+	opacity: 0.9;
+}
+
+.section-top-banner .site-container{
+	position: relative;
+	z-index: 1;
+}
+
+.top-banner__inner{
+	display: flex;
+	align-items: center;
+}
+
+.top-banner__inner .top-banner__text{
+	margin-left: 54px;
+}
+
+.top-banner__inner .top-banner__h2{
+	font-size: 74px;
+	letter-spacing: 3px;
+	color: #fff;
+}
+
+.top-banner__inner .top-banner__image{
+	font-size: 0;
+}
+
+a.button{
+	display: inline-block;
+	padding: 10px 20px;
+	font-size: 11px;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: #c18f59;
+	border: 1px solid #fff;
+	transition: 0.3s ease;
+}
+
+a.button:hover, .a.button:focus{
+	color: #777;
+}
